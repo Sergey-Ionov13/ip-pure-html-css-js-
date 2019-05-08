@@ -72,7 +72,7 @@ main ul, main ol {
     bottom: 10px;
     right: 10px;
     display: inline-block;
-    width: 60%;
+    width: 12em;
     text-align: center;
     transform: scaleX(-1);
 }
@@ -138,6 +138,7 @@ main ul, main ol {
 
 /* main */
 .single > img {
+    width: auto;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -162,8 +163,8 @@ h2 {
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     margin-bottom: 1em;
+    align-items: center;
 }
-.grid-container > h3, .grid-container > .label { margin-top: 10px }
 .grid-container p { margin: 0 }
 .label { border-top: 1px solid var(--main-text-color) }
 .label:first-child { border: none }
@@ -171,8 +172,6 @@ h2 {
     font-size: 1em;
     font-weight: bold;
 }
-
-#modal-container { display: none }
 
 
 
@@ -189,6 +188,7 @@ h2 {
     width: 100%;
     text-align: center;
     padding: 0.25em;
+    font-size: 1.3em;
 }
 .icon-phone {
     color: #006400;
@@ -204,9 +204,10 @@ h2 {
 
 
 
-#modal-container
-{
-    position:absolute;
+/* modal window for portfolio-images */
+#modal-container {
+    position:fixed;
+    z-index: 3;
     height: 100%;
     width:100%;
     margin: 0;
@@ -214,27 +215,49 @@ h2 {
     left: 0;
     background: #9e9c9c;
 }
-#modal
-{
+#modal {
     position: absolute;
-    height: 200px;
-    width: 500px;
     background: #fff;
     border-radius: 10px;
     margin: auto;
     vertical-align: middle;
-    top:0;
+    /*top:0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
 }
-.closebtn
-{
+.closeBtn {
+    display: block;
     position: absolute;
-    top:10px;
-    right:10px;
+    bottom:5px;
+    right:5px;
     cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border: 3px solid black;
+    border-radius: 13px;
+    line-height: 0;
 }
+.close {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.close:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 16px;
+    height: 2px;
+    transform: rotate(90deg);
+}
+.closeBtn:hover { background-color: #CCC }
 
 
 

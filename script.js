@@ -3,7 +3,9 @@ const navPanel = document.querySelector('#nav-panel'),
     single = document.querySelector('.single'),
     description = document.querySelector('#description'),
     portfolio = document.querySelector('#portfolio'),
-    calculator = document.querySelector('#calculator');
+    calculator = document.querySelector('#calculator'),
+    modalContainer = document.querySelector('#modal-container'),
+    modal = document.querySelector('#modal');
 navAnimation();
 
 function navAnimation() {
@@ -22,7 +24,8 @@ function navAnimation() {
 setContent();
 
 function setContent() {
-    const content ={main: {
+    const content ={
+        main: {
         description: '<h1 id="header">Обо мне</h1>' +
         '<article><h2>МУ-3 ОАО "Белсантехмонтаж-2"</h2><p>' +
         'Здравствуйте! Я Сергей Ионов. Уже более 14 лет я работаю в сфере строительства. Начинал свою карьеру я в' +
@@ -126,86 +129,54 @@ function setContent() {
             '<span class="label-value">Лабораторный корпус</span></p>' +
             '<p><span class="label-name">Система: </span><span class="label-value">В20,В63-В65,В67-В70,В106</span></p></div>' +
             '<article class="grid-container">' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_1.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_1.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_2.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_2.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_3.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_3.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_4.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_4.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_5.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_5.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_6.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_6.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_7.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_7.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_8.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_8.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_9.jpg">' +
-            '<img src="images/portfolio/В20,В63-В65,В67-В70,В106_Страница_9.jpg"></a></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_1.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_2.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_3.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_4.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_5.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_6.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_7.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/В20,E20,63-65,67-70,106_P_8.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_9.jpg"></div>' +
             '</article>' +
             '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">Лабораторный корпус</span></p>' +
             '<p><span class="label-name">Система: </span><span class="label-value">П7</span></p></div>' +
             '<article class="grid-container">' +
-            '<div class="grid-item"><a href="images/portfolio/П7_Страница_1.jpg">' +
-            '<img src="images/portfolio/П7_Страница_1.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/П7_Страница_2.jpg">' +
-            '<img src="images/portfolio/П7_Страница_2.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/П7_Страница_3.jpg">' +
-            '<img src="images/portfolio/П7_Страница_3.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/П7_Страница_4.jpg">' +
-            '<img src="images/portfolio/П7_Страница_4.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/П7_Страница_5.jpg">' +
-            '<img src="images/portfolio/П7_Страница_5.jpg"></a></div>' +
+            '<div class="grid-item"><img src="images/portfolio/П7_Страница_1.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/П7_Страница_2.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/П7_Страница_3.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/П7_Страница_4.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/П7_Страница_5.jpg"></div>' +
             '</article>',
             calculator: ''
         },
         balancing: {
             description: '<h2>Примеры отчётов по балансировка системы отопления</h2>',
-            portfolio: '<article class="grid-container"><h3 class="caption">Ж/Д №18 по пр. Дзержинского по генплану</h3>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_1.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_1.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_2.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_2.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_3.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_3.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_4.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_4.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_5.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_5.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_6.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_6.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_7.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_7.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_8.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_8.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/ЖД%2018_Страница_9.jpg">' +
-            '<img src="images/portfolio/ЖД%2018_Страница_9.jpg"></a></div></article>' +
+            portfolio: '<div class="label"><p class="label-value">Ж/Д №18 по пр. Дзержинского по генплану</p></div><article class="grid-container">' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_1.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_2.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_3.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_4.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_5.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_6.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_7.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_8.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_9.jpg"></div></article>' +
+            '<div class="label"><p class="label-value">Учебно-тренировочный центр фристайла со спортивно-оздоровительным комплексом по ул. Сурганова в г. Минске</p></div>' +
             '<article class="grid-container">' +
-            '<h3 class="caption">Учебно-тренировочный центр фристайла со спортивно-оздоровительным комплексом по ул. Сурганова в г. Минске</h3>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_01.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_01.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_02.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_02.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_03.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_03.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_04.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_04.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_05.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_05.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_06.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_06.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_07.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_07.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_08.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_08.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_09.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_09.jpg"></a></div>' +
-            '<div class="grid-item"><a href="images/portfolio/Фристайл_Страница_10.jpg">' +
-            '<img src="images/portfolio/Фристайл_Страница_10.jpg"></a></div></article>',
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_01.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_02.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_03.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_04.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_05.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_06.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_07.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_08.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_09.jpg"></div>' +
+            '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_10.jpg"></div></article>',
             calculator: ''
-        }};
+        }
+    };
 
     setHTML(description, content['main']['description']);
 
@@ -231,6 +202,9 @@ function setContent() {
             hideElement(single);
             showElement(portfolio);
             showElement(calculator);
+            portfolio.addEventListener('click', toggleModal);
+            const closeBtn = document.querySelector('.closeBtn');
+            closeBtn.addEventListener('click', toggleModal);
         }
 
         /*вставить соответствующее содержимое*/
@@ -240,8 +214,6 @@ function setContent() {
         if (!pressedButton.classList.contains('active')) {
             pressedButton.classList.add('active');
         }
-
-        if (pressedButton.getAttribute('id'))
     }
     function hideElement(elem) {
         if (!elem.classList.contains('invisible')) {
@@ -256,7 +228,9 @@ function setContent() {
 }
 
 /* Modal window */
-function toggleModal() {
-    const modalContainer = document.querySelector('#modal-container');
+function toggleModal(event) {
+    const pressedImg = event.target.cloneNode(true);
+    if (pressedImg.classList.contains('closeBtn') || pressedImg.classList.contains('close')) { modal.removeChild(modal.firstChild) }
+    else { modal.insertBefore(pressedImg, modal.firstChild) }
     modalContainer.style.display = ( modalContainer.style.display === 'none' ? 'block' : 'none' );
 }
