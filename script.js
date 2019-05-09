@@ -143,27 +143,27 @@ function siteScript() {
       balancing: {
         description: '<h2>Примеры отчётов по балансировка системы отопления</h2>',
         portfolio: '<div class="label"><p class="label-value">Ж/Д №18 по пр. Дзержинского по генплану</p></div><article class="grid-container">' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_1.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_2.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_3.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_4.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_5.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_6.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_7.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_8.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/ЖД%2018_Страница_9.jpg"></div></article>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_1.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_2.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_3.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_4.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_5.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_6.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_7.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_8.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/C18_P_9.jpg"></div></article>' +
         '<div class="label"><p class="label-value">Учебно-тренировочный центр фристайла со спортивно-оздоровительным комплексом по ул. Сурганова в г. Минске</p></div>' +
         '<article class="grid-container">' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_01.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_02.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_03.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_04.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_05.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_06.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_07.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_08.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_09.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/Фристайл_Страница_10.jpg"></div></article>',
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_1.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_2.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_3.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_4.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_5.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_6.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_7.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_8.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_9.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Freestyle_P_10.jpg"></div></article>',
         calculator: ''
       }
     },
