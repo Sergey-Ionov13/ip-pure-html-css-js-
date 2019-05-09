@@ -119,11 +119,24 @@ function siteScript() {
         '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">Лабораторный корпус</span></p>' +
         '<p><span class="label-name">Система: </span><span class="label-value">П7</span></p></div>' +
         '<article class="grid-container">' +
-        '<div class="grid-item"><img src="images/portfolio/П7_Страница_1.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/П7_Страница_2.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/П7_Страница_3.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/П7_Страница_4.jpg"></div>' +
-        '<div class="grid-item"><img src="images/portfolio/П7_Страница_5.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/I7_P_1.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/I7_P_2.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/I7_P_3.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/I7_P_4.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/I7_P_5.jpg"></div>' +
+        '</article>' +
+        '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">"Республиканская ' +
+        'молекулярно-генетическая лаборатория канцерогенеза" РНПЦ ОМР им. Александрова</span></p>' +
+        '<p><span class="label-name">Планы этажей</span></p></div>' +
+        '<article class="grid-container">' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis2.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis3.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis4.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis5.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis6.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_23.400.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_25.800.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_roof.jpg"></div>' +
         '</article>',
         calculator: ''
       },
@@ -184,8 +197,8 @@ function siteScript() {
   }
   function tabToggle(event) {
     navPanel.classList.remove('visible');//hide nav-panel
-    const pressedButton = event.target;
-    console.log(pressedButton);
+    const pressedButton = event.target,
+        bookmarks = document.querySelectorAll('.bookmarks');
 
     /*вставить соответствующее содержимое*/
     setHTML(description, content[pressedButton.getAttribute('id')]['description']);
@@ -208,9 +221,10 @@ function siteScript() {
       modalManage();
     }
 
-    if (!pressedButton.classList.contains('active')) {
-      pressedButton.classList.add('active');
-    }
+    bookmarks.forEach( (el) => {
+      el.classList.remove('active')
+    });
+    pressedButton.classList.add('active');
   }
   function hideElement(elem) {
     if (!elem.classList.contains('invisible')) {
