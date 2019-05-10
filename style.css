@@ -75,6 +75,7 @@ main ul, main ol {
     width: 12em;
     text-align: center;
     transform: scaleX(-1);
+    box-sizing: content-box;
 }
 #nav-panel {
     border-radius: 0.5em;
@@ -82,32 +83,29 @@ main ul, main ol {
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
 }
-#main {
+#main > a {
     border-radius: 0.5em 0.5em 0 0;
 }
-#balancing {
+#balancing > a {
     border-radius: 0 0 0.5em 0.5em;
 }
 .bookmarks {
     padding: 0;
-    font-size: 0;
     border: none;
 }
-.bookmarks.active {
+.bookmarks.active > a {
     background-color: rgba(87, 16, 16, 1);
 }
+.bookmarks > a { color: inherit; display: block; font-size: 0 }
 #nav-panel.visible {
     margin-bottom: 10px;
 }
-#nav-panel.visible > .bookmarks {
+#nav-panel.visible > .bookmarks > a {
     padding: 1em;
-    cursor: pointer;
     font-size: inherit;
     border-top: 1px solid var(--nav-text-color);
 }
-#nav-panel.visible > .bookmarks:first-child {
-    border: none;
-}
+#nav-panel.visible > .bookmarks:first-child > a { border: none }
 
 #nav-toggle {
     position: relative;
@@ -151,6 +149,9 @@ main ul, main ol {
     max-width: 100%;
     margin: 0 auto;
 }
+.single > p {
+    text-align: center;
+}
 #warning {
     color: var(--warning-color);
     font-size: 1.1em;
@@ -158,6 +159,7 @@ main ul, main ol {
     padding: 5px;
     background-color: var(--warning-bg-color);
     border-radius: 15px;
+    text-indent: 0;
 }
 h1 {
     margin: 20px 0;
@@ -166,6 +168,12 @@ h1 {
 h2 {
     margin: 10px 0;
     font-size: 1.3em;
+}
+h2 > .links { color: inherit }
+.links {
+    font-family: 'Arial', sans-serif;
+    color: var(--warning-color);
+    font-weight: bold;
 }
 .grid-container {
     display: grid;
@@ -283,18 +291,15 @@ h2 {
         transform: none;
         margin-bottom: 10px;
     }
-    #main, #balancing {
+    #main > a, #balancing > a {
         border-radius: 0;
     }
-    #nav-panel > .bookmarks {
-        display: inline-block;
+    #nav-panel > .bookmarks { display: inline-block }
+    #nav-panel > .bookmarks > a { border-left: 1px solid var(--nav-text-color) }
+    #nav-panel > .bookmarks:first-child > a { border: none }
+    #nav-panel > .bookmarks > a {
         padding: 1em;
-        cursor: pointer;
         font-size: inherit;
-        border-left: 1px solid var(--nav-text-color);
-    }
-    #nav-panel > .bookmarks:first-child {
-        border: none;
     }
     #nav-toggle { display: none }
 
