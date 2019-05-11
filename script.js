@@ -14,13 +14,13 @@ function siteScript() {
         'Технический Университет">БНТУ</abbr></a> на заочное отделение по специальности <a href="http://www.bntu.by/fes-tiv.html" ' +
         'class="links" target="_blank"><abbr title="Теплогазоснабжение, вентиляция и охрана воздушного бассейна">ТГСВ</abbr></a>. ' +
         'Работая на таких объектах, как "Белорусский государственный университет физической культуры", ОАО "Белрыба", ' +
-        '"ГУ РНПЦ детской хирургии", "4-я городская клиническая больница им. Н.Е. Савченки" и др., я узнал, с какими ' +
-        'сложностями можно столкнуться при монтаже систем вентиляции, на какие особенности в строительных ' +
-        'конструкциях необходимо обращать внимание перед выполнением монтажа и т.д.' +
+        '"ГУ РНПЦ детской хирургии", "4-я городская клиническая больница им. Н.Е. Савченки", "Аэропорт Минск-1 " и др., ' +
+        'я узнал, с какими сложностями можно столкнуться при монтаже систем вентиляции, на какие особенности в ' +
+        'строительных конструкциях необходимо обращать внимание перед выполнением монтажа и т.д.' +
         '</p></article>' +
         '<article><h2>ОТ монтажника вентсистем до инженера по наладке и испытаниям систем отопления. ' +
         '<span class="links">СУ-205 ОАО "МАПИД"</span></h2><p>' +
-        'Через два года я получил 4 разряд, а ещё спустя пару месяцев устрроился в ' +
+        'Через два года я получил 4 разряд, а ещё спустя пару месяцев устроился в ' +
         '<a href="http://mapid.by/o-predpriyatii/struktura-predpriyatiya/specializirovannye-upravleniya/specializirovannoe-upravlenie-n-205.html" class="links" target="_blank">' +
         '<abbr title="Специализированное управление № 205">СУ-205</abbr></a> <a href="http://mapid.by/" class="links" target="_blank">' +
         '<abbr title="Минское арендное предприятие индустриального домостроения">ОАО "МАПИД"</abbr></a>. Проработав ' +
@@ -61,7 +61,7 @@ function siteScript() {
         'начал работать с <a href="http://i-s.by/" class="links" target="_blank">ЗАО "Инвест-Систем"</a>. На тот момент ' +
         'они уже сдали в эксплуатацию три жилых дома с горизонтальной системой отопления, в двух из которых имелись ' +
         'проблемы. В результате проведения балансировочных работ, была выявлена ошибка в проекте, устранение которой ' +
-        'позволило отбалансировать систему отопления и привести её работу в нормальный режим.' +
+        'позволило cбалансировать систему отопления и привести её работу в нормальный режим.' +
         '</p><p>' +
         'Всего же в качестве ИП, я выполнил балансировку систем отопления на более, чем 10 объектах, в числе которых ' +
         'жилые дома, встроенные помещения, административные здания, а также "Учебно-тренировочный центр фристайла" по ' +
@@ -93,12 +93,12 @@ function siteScript() {
         'В таком разнообразии назначения объектов, я получил опыт работы, который позволяет мне выполнять деталировку ' +
         'и разработку монтажных схем систем вентиляции любой сложности.' +
         '</p></article>' +
-        '<article><h2>Переезд в Санкт-Петербург и новыЙ опыт в области отопления <span class="links">ООО "САНЕКСТ.ПРО"</span></h2><p>' +
+        '<article><h2>Переезд в Санкт-Петербург и новый опыт в области отопления <span class="links">ООО "САНЕКСТ.ПРО"</span></h2><p>' +
         'В течение нескольких лет я вынашивал в себе идею переезда в другую страну. И вот, в октябре 2017 мы с семьёй ' +
         'переехали в Санкт-Петербург, где я устроился в <a href="https://sanext.ru" class="links" target="_blank">' +
         'ООО "САНЕКСТ.ПРО"</a> на должность инженера по работе с проектными организациями. ' +
         '<a href="https://sanext.ru" class="links" target="_blank">САНЕКСТ</a> является разработчиком и производителем ' +
-        'инженерных систем для отопления, водоснабжения и теплых полов. На меня возлагались следующие обязянности:</p>' +
+        'инженерных систем для отопления, водоснабжения и теплых полов. На меня возлагались следующие обязанности:</p>' +
         '<ul>' +
         '<li>Визиты в ключевые строительные и проектные организации города для проведения технических консультаций ' +
         'по всей линейке оборудования <a href="https://sanext.ru/sanext_catalog" class="links" target="_blank">SANEXT</a></li>' +
@@ -123,9 +123,10 @@ function siteScript() {
         calculator: ''
       },
       detailing: {
-        description: '<h2>Деталировка вентсистем</h2>',
+        description: '<h2>Примеры деталировки вентсистем</h2>',
         portfolio: '<div class="label"><p><span class="label-name">Объект: </span>' +
-        '<span class="label-value">Лабораторный корпус</span></p>' +
+        '<span class="label-value">Лабораторный корпус Белорусского государственного медицинского университета по ' +
+        'просп. Дзержинского, 83</span></p>' +
         '<p><span class="label-name">Система: </span><span class="label-value">В20,В63-В65,В67-В70,В106</span></p></div>' +
         '<article class="grid-container">' +
         '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_1.jpg"></div>' +
@@ -138,7 +139,8 @@ function siteScript() {
         '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_8.jpg"></div>' +
         '<div class="grid-item"><img src="images/portfolio/E20,63-65,67-70,106_P_9.jpg"></div>' +
         '</article>' +
-        '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">Лабораторный корпус</span></p>' +
+        '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">Лабораторный корпус ' +
+        'Белорусского государственного медицинского университета по просп. Дзержинского, 83</span></p>' +
         '<p><span class="label-name">Система: </span><span class="label-value">П7</span></p></div>' +
         '<article class="grid-container">' +
         '<div class="grid-item"><img src="images/portfolio/I7_P_1.jpg"></div>' +
@@ -149,7 +151,7 @@ function siteScript() {
         '</article>' +
         '<div class="label"><p><span class="label-name">Объект: </span><span class="label-value">"Республиканская ' +
         'молекулярно-генетическая лаборатория канцерогенеза" РНПЦ ОМР им. Александрова</span></p>' +
-        '<p><span class="label-name">Планы этажей</span></p></div>' +
+        '<p><span class="label-value">Планы этажей</span></p></div>' +
         '<article class="grid-container">' +
         '<div class="grid-item"><img src="images/portfolio/Carcinogenesis2.jpg"></div>' +
         '<div class="grid-item"><img src="images/portfolio/Carcinogenesis3.jpg"></div>' +
@@ -159,6 +161,27 @@ function siteScript() {
         '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_23.400.jpg"></div>' +
         '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_25.800.jpg"></div>' +
         '<div class="grid-item"><img src="images/portfolio/Carcinogenesis_roof.jpg"></div>' +
+        '</article>' +
+        '<p><span class="label-name">Система: </span><span class="label-value">K6 (деталировка)</span></p>' +
+        '<article class="grid-container">' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P1.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P2.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P3.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P4.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P5.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P6.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P7.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P8.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P9.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P10.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P11.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P12.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P13.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P14.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P15.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P16.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P17.jpg"></div>' +
+        '<div class="grid-item"><img src="images/portfolio/K6_P18.jpg"></div>' +
         '</article>',
         calculator: ''
       },
@@ -218,6 +241,51 @@ function siteScript() {
   function setHTML(container, content) {
     container.innerHTML = content;
   }
+  function modalManage() {
+        const imagesContainer = document.querySelector('#portfolio'),
+            modal = document.querySelector('#modal'),
+            innerWindow = document.querySelector('#inner-window'),
+            closeBtn = document.querySelector('#close-btn');
+
+        imagesContainer.addEventListener('click', activateModal);
+        closeBtn.addEventListener('click', deactivateModal);
+
+        function activateModal(event) {
+            const pressedItem = event.target;
+            console.log(pressedItem);
+            if (pressedItem.hasAttribute('src'))   {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                innerWindow.appendChild(pressedItem.cloneNode(true));
+                verticalAlignImage();
+                window.addEventListener('resize', () => { verticalAlignImage() }, false);
+            }
+        }
+        function deactivateModal() {
+            modal.style.display = 'none';
+            innerWindow.innerHTML = '';
+            document.body.style.overflow = '';
+        }
+        function verticalAlignImage() {
+            const image = document.querySelector('#inner-window > img'),
+                availableHeight = window.innerHeight,
+                innerWindow = document.querySelector('#inner-window');
+
+            if (image) {
+                if (image.offsetHeight > availableHeight || image.offsetHeight > image.offsetWidth) {
+                    image.classList.add('vertical');
+                } else {
+                    image.removeAttribute('class');
+                }
+
+                if (!image.classList.contains('vertical')) {
+                    innerWindow.style.marginTop = (availableHeight - image.offsetHeight)/2 + 'px';
+                } else {
+                    innerWindow.style.marginTop = 'auto';
+                }
+            }
+        }
+    }
   function tabToggle(event) {
     navPanel.classList.remove('visible');//hide nav-panel
     const pressedButton = event.target.parentElement,
@@ -247,60 +315,16 @@ function siteScript() {
       el.classList.remove('active')
     });
     pressedButton.classList.add('active');
-  }
-  function hideElement(elem) {
-    if (!elem.classList.contains('invisible')) {
-      elem.classList.add('invisible');
-    }
-  }
-  function showElement(elem) {
-    if (elem.classList.contains('invisible')) {
-      elem.classList.remove('invisible');
-    }
-  }
-  function modalManage() {
-    const imagesContainer = document.querySelector('#portfolio'),
-      modal = document.querySelector('#modal'),
-      innerWindow = document.querySelector('#inner-window'),
-      closeBtn = document.querySelector('#close-btn');
 
-    imagesContainer.addEventListener('click', activateModal);
-    closeBtn.addEventListener('click', deactivateModal);
-
-    function activateModal(event) {
-      const pressedItem = event.target;
-      console.log(pressedItem);
-      if (pressedItem.hasAttribute('src'))   {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        innerWindow.appendChild(pressedItem.cloneNode(true));
-        verticalAlignImage();
-        window.addEventListener('resize', () => { verticalAlignImage() }, false);
+    function hideElement(elem) {
+          if (!elem.classList.contains('invisible')) {
+              elem.classList.add('invisible');
+          }
       }
-    }
-    function deactivateModal() {
-      modal.style.display = 'none';
-      innerWindow.innerHTML = '';
-      document.body.style.overflow = '';
-    }
-    function verticalAlignImage() {
-      const image = document.querySelector('#inner-window > img'),
-        availableHeight = window.innerHeight,
-        innerWindow = document.querySelector('#inner-window');
-
-      if (image) {
-        if (image.offsetHeight > availableHeight || image.offsetHeight > image.offsetWidth) {
-          image.classList.add('vertical');
-        } else {
-          image.removeAttribute('class');
-        }
-
-        if (!image.classList.contains('vertical')) {
-          innerWindow.style.marginTop = (availableHeight - image.offsetHeight)/2 + 'px';
-        } else {
-          innerWindow.style.marginTop = 'auto';
-        }
+    function showElement(elem) {
+          if (elem.classList.contains('invisible')) {
+              elem.classList.remove('invisible');
+          }
       }
-    }
   }
 }
