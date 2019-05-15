@@ -244,6 +244,7 @@ function siteScript() {
     },
     navPanel = document.querySelector('#nav-panel'),
     single = document.querySelector('.single'),
+    warning = document.querySelector('#warning'),
     description = document.querySelector('#description'),
     portfolio = document.querySelector('#portfolio'),
     calculator = document.querySelector('#calculator');
@@ -337,12 +338,15 @@ function siteScript() {
       hideElement(portfolio);
       calculator.style.display = 'none';
       showElement(single);
+      showElement(warning);
     } else if (pressedButton.getAttribute('id') === 'main') {
       hideElement(single);
       showElement(portfolio);
+      showElement(warning);
       calculator.style.display = 'grid';
     } else {
         hideElement(single);
+        hideElement(warning);
         showElement(portfolio);
         calculator.style.display = 'none';
     }
