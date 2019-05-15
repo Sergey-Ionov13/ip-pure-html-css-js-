@@ -144,22 +144,29 @@ main ul, main ol {
 
 
 /* main */
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 .single > img {
     width: auto;
     max-width: 100%;
     margin: 0 auto;
+    border-radius: 15px;
 }
 .single > p {
     text-align: center;
 }
 #warning {
+    max-width: 1600px;
     color: var(--warning-color);
     font-size: 1.1em;
     margin: 10px;
-    padding: 5px;
+    padding: 15px;
     background-color: var(--warning-bg-color);
     border-radius: 15px;
     text-indent: 0;
+    text-align: center;
 }
 h1 {
     margin: 20px 0;
@@ -189,12 +196,111 @@ h2 > .links { color: inherit }
     font-size: 1em;
     font-weight: bold;
 }
+.main-images-container {
+    text-align: center;
+}
+.main-images-container p {
+    text-indent: 0;
+    margin: 5px 0;
+}
+.main-image { display: inline-block }
+.main-image > img {
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+
+/* calculator */
+#calculator p {
+    margin-bottom: 0.5em;
+}
+.det-calc, .bal-calc {
+    background: var(--warning-bg-color);
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+}
+.input-wrapper {
+    margin: 5px auto 0;
+    width: 200px;
+}
+.buttons {
+    margin-top: 15px;
+}
+.buttons > button {
+    display: block;
+    margin: 10px auto;
+}
+.inputs input, #det-result > span, #bal-result > span {
+    outline: none;
+    padding: 0.25em;
+    border: 2px solid grey;
+    border-radius: 0.5em;
+}
+.label, .input {
+    text-align: center;
+}
+#det-result, #bal-result {
+    margin: 20px auto 0;
+    text-align: center;
+}
+#det-result > p, #bal-result > p {
+    margin: 0 auto 5px;
+    text-indent: 0;
+}
+#det-result > span, #bal-result > span {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--bg-color);
+    color: #3d6cb8;
+    font-weight: bold;
+    font-size: 20px;
+    border-color: rgb(180, 180, 180);
+    vertical-align: bottom;
+}
+#det-result > span > .currency,
+#bal-result > span > .currency {
+    font-weight: normal;
+    font-size: 16px;
+}
+.inputs input:focus {
+    border-color: #269926;
+    box-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px rgb(38, 153, 38);
+}
+.label > label {
+    color: var(--warning-color);
+    font-weight: bold;
+}
+
+#det-calculate, #det-clear, #bal-calculate, #bal-clear {
+    font: inherit;
+    padding: 10px;
+    /*margin: 20px;*/
+    border-radius: 7px;
+    border: 2px solid grey;
+}
+#det-calculate:hover, #bal-calculate:hover { border-color: rgb(38, 153, 38) }
+#det-calculate:focus, #bal-calculate:focus {
+    outline: none;
+    box-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px rgb(38, 153, 38);
+}
+
+#det-clear:hover, #bal-clear:hover { border-color: rgb(191, 48, 48) }
+#det-clear:focus, #bal-clear:focus {
+    outline: none;
+    box-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px rgb(191, 48, 48);
+}
 
 
 
 /* contacts */
 #contacts {
-    margin: 10px 10px 70px;
+    margin: 30px 10px 70px;
     padding: 5px;
     color: var(--contacts-text-color);
     background-color: var(--contacts-bg-color);
@@ -275,8 +381,7 @@ h2 > .links { color: inherit }
 
 
 
-
-@media (min-width: 769px) {
+@media (min-width: 841px) {
     #nav-bar {
         display: block;
         bottom: auto;
@@ -304,12 +409,27 @@ h2 > .links { color: inherit }
     #nav-toggle { display: none }
 
     main { margin-top: 70px }
-    .single > img { max-width: 400px }
+
+    h2 { margin-top: 30px }
+    #calculator {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+        grid-gap: 2%;
+    }
+    .det-calc > p, .bal-calc > p {
+        min-height: 42px;
+    }
+}
+
+@media (min-width: 654px) {
+    .single > img { border-radius: 0 }
     #warning {
-        max-width: 50%;
-        margin: 1em auto;
+        margin-top: 0;
         padding: 1em;
     }
 
     #contacts { margin-bottom: 10px }
+}
+@media (min-width: 441px) {
+    .single > img { max-width: 400px }
 }

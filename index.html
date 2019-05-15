@@ -12,7 +12,8 @@
     <ul id="nav-panel" class="">
         <li class="bookmarks active" id="main"><a href="#">Главная</a></li><!--
         --><li class="bookmarks" id="detailing"><a href="#">Деталировка вентсистем</a></li><!--
-        --><li class="bookmarks" id="balancing"><a href="#">Балансировка системы отопления</a></li>
+        --><li class="bookmarks" id="balancing"><a href="#">Балансировка системы отопления</a></li><!--
+        --><li class="bookmarks" id="about"><a href="#">Обо мне</a></li>
         <!--
         <li class="bookmarks transition-height" id="pre-production"><a href="#top-page">Подготовка производства</a></li>
         -->
@@ -21,18 +22,99 @@
 </nav>
 
 <main>
-    <section class="single">
+    <p id="warning">
+        <strong>Примеры моих работ Вы можете найти в соответствующих вкладках панели навигации.</strong>
+    </p>
+    <section class="single invisible">
         <img src="images/iam.jpg">
-        <p id="warning">
-            <strong>Примеры моих работ Вы можете найти в соответствующих вкладках панели навигации.</strong>
-        </p>
-        <p>
-            Ниже на этой странице сжато изложена моя профессиональная биография.
-        </p>
+        <p>Ниже на этой странице изложена моя профессиональная биография.</p>
     </section>
     <section id="description"></section>
     <section id="portfolio"></section>
-    <section id="calculator"></section>
+    <section id="calculator">
+        <article id="detailing-form">
+            <form class="det-calc">
+                <h3>Деталировка систем вентиляции</h3>
+                <p>Площадь воздуховодов (м<sup>2</sup>) с поперечным сечением:</p>
+                <div class="inputs">
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="small">до 0,312 м<sup>2</sup><br>(до &empty;315)</label>
+                        </div>
+                        <div class="input">
+                            <input id="small" type="text" name="small">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="middle">от 0,313 м<sup>2</sup> до 1,583 м<sup>2</sup><br>(от &empty;355 до &empty;710)</label>
+                        </div>
+                        <div class="input">
+                            <input id="middle" type="text" name="middle">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="large">от 1,584 м<sup>2</sup><br>(от &empty;800)</label>
+                        </div>
+                        <div class="input">
+                            <input id="large" type="text" name="large">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="det-calculate">Рассчитать</button>
+                    <button type="reset" id="det-clear">Очистить</button>
+                </div>
+                <div id="det-result">
+                    <p>Стоимость:</p>
+                    <span></span>
+                </div>
+            </form>
+        </article>
+        <article id="balancing-form">
+            <form class="bal-calc">
+                <h3>Балансировка системы отопления</h3>
+                <p>Количество клапанов:</p>
+                <div class="inputs">
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="trv">термостатические клапаны:</label>
+                        </div>
+                        <div class="input">
+                            <input id="trv" type="text" name="trv">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="bv">ручные балансировочные клапаны:</label>
+                        </div>
+                        <div class="input">
+                            <input id="bv" type="text" name="bv">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="label">
+                            <label for="dtv">регуляторы перепада давления:</label>
+                        </div>
+                        <div class="input">
+                            <input id="dtv" type="text" name="dtv">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="bal-calculate">Рассчитать</button>
+                    <button type="reset" id="bal-clear">Очистить</button>
+                </div>
+                <div id="bal-result">
+                    <p>Стоимость:</p>
+                    <span></span>
+                </div>
+            </form>
+        </article>
+    </section>
 
     <div id="modal">
         <div id="inner-window"></div>
